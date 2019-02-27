@@ -26,7 +26,13 @@ module.exports = {
         text: '前端随笔',
         link: '/fe/'
       }, {
-        text: '前端资源',
+        text: '后端随笔',
+        link: '/java/'
+      },{
+        text: '部署运维',
+        link: '/docker/'
+      },{
+        text: '工具资源',
         link: '/resource/'
       }
     ]

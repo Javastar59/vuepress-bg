@@ -1,15 +1,13 @@
 ---
 home: true
 heroImage: /home-logo.png
-description: 北风吹秋风凉、谁家娇妻守空房、你有困难我帮忙
+description: 心随往事顺水流，人随风去不敢求
 features:
 - title: 随笔
   links: /fe/
   target: false
-- title: Github
-  links: https://github.com/JavaStar59
-  target: true
-- title: 个人简历
+
+- title: 简历
   links: /about/
   target: true
 ---
