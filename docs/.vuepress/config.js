@@ -29,7 +29,6 @@ module.exports = {
         text: '前端资源',
         link: '/resource/'
       }
-    ],
-    lastUpdated: '最后更新'
+    ]
   }
 }

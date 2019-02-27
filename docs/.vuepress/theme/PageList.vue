@@ -7,7 +7,7 @@
           v-for="(item, index) in list"
           :key="index"
           @click="handlerClick(item.link)"
-        > 
+        >
           <div class="item-list-foot">
             <div class="tags">
               <span class="tag">{{item.tags}}</span>
@@ -27,8 +27,8 @@
         <div class="get-more" v-if="totalSize !== currentLen" @click="handleMore">查看更多</div>
       </div>
       <div class="no-list" v-else>
-        暂未更新，快催老王去...
-        <a href="mailto:wdojay@163.com">点我发邮件</a>
+        暂未更新!!
+        <a href="star59@163.com">点我发邮件</a>
       </div>
     </div>
     <page-right></page-right>
@@ -37,7 +37,7 @@
 
 <script>
   import PageRight from './PageRight.vue'
-  
+
   export default {
     data () {
       return {
@@ -150,7 +150,7 @@
           margin-bottom 10px
           overflow hidden
           .date{
-            float right 
+            float right
             font-size 12px
             color #bbbbbb
           }
