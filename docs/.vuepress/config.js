@@ -16,7 +16,7 @@ module.exports = {
     ['meta', { name: 'baidu-site-verification', content: 'TSXvc1KyeR' }]
   ],
   themeConfig: {
-    search: true,
+    search: true ,
     logo: '/logo.png',
     nav: [
       {
