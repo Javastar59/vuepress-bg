@@ -20,5 +20,8 @@
   "homepage": "https://github.com/Javastar59/vuepress-bg#readme",
   "devDependencies": {
     "vuepress": "^0.14.9"
+  },
+  "dependencies": {
+    "element-ui": "^2.5.4"
   }
 }
