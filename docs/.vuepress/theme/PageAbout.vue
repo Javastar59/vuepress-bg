@@ -8,17 +8,17 @@
           <div class="section-title">基本信息</div>
           <span class="section-title-r"></span>
         </header>
-        <section class="name">王东杰</section>
+        <section class="name">曹兴</section>
         <div class="person">
           <section class="info">
-            <div>男 / 1991.04</div>
-            <div>大连民族大学 · 自动化</div>
-            <div>本科 / 2015年毕业</div>
+            <div>男 / 1995.05</div>
+            <div>商洛学院 · 计算机科学与技术</div>
+            <div>本科 / 2018年毕业</div>
           </section>
           <section class="info ml">
-            <div><a href="https:dojay.cn">https://dojay.cn</a></div>
-            <div><a href="mailto:wdojay@gmail.com">wdojay@gmail.com</a></div>
-            <div>18301669233</div>
+            <div><a href="https:dojay.cn">https://star59.top</a></div>
+            <div><a href="star59@163.com">star59@163.com</a></div>
+            <div>15389673176</div>
           </section>
         </div>
       </section>
@@ -74,7 +74,7 @@
         </div>
       </section>
     </div>
-    <a target="_blank" href="/个人简历-前端开发-王东杰.pdf" class="download">下载简历</a>
+    <a target="_blank" href="/个人简历-Java开发-曹兴.pdf" class="download">下载简历</a>
   </div>
 </template>
 
@@ -96,7 +96,7 @@
 
 <style lang="stylus">
   @import './styles/config.styl'
-  
+
   .page-about
     width 900px
     margin 20px auto
