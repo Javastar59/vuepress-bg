@@ -6,7 +6,6 @@ features:
 - title: 随笔
   links: /fe/
   target: false
-
 - title: 简历
   links: /about/
   target: true
