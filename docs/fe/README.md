@@ -38,11 +38,6 @@ items:
     link: adb
     date: 2018/08/20
     tags: adb
-  - title: CentOS 7 yum 安装 Nginx
-    description: 这两天在折腾服务器的东西，记录一下nginx的安装过程
-    link: yumNginx
-    date: 2018/08/08
-    tags: nginx
   - title: Mac终端操作Linux服务器的一些常用命令
     description: Mac终端操作Linux服务器的一些常用命令
     link: linuxPort

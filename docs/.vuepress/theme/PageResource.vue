@@ -20,9 +20,6 @@
         </a>
       </div>
     </div>
-    <div class="more">
-      <a href="https://github.com/dojay/dojay.cn" target="_blank">点我去补充</a>
-    </div>
   </div>
 </template>
 
