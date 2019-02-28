@@ -1,7 +1,7 @@
 <template>
   <div class="page-404">
     <div class="content">
-      <img class="404-img" src="/404.png" style="height: 350px;margin-left: 160px"/>
+      <img class="404-img" src="/404.png"/>
       <div class="tips">对不起，页面迷路了，我们建议您...</div>
       <router-link to="/" class="back-home">返回首页</router-link>
     </div>
@@ -18,6 +18,10 @@
     color #666666
     font-size 24px
     text-align center
+  }
+  img{
+    height 350px
+    margin-left 160px
   }
   .back-home{
     width 200px
@@ -40,6 +44,11 @@
   .page-404{
     .tips{
       font-size 16px
+    }
+    img{
+      height 180px
+      margin-left 70px
+      margin-bottom 50px
     }
     .back-home{
       width 50%
