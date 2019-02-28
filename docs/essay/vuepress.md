@@ -16,6 +16,7 @@ customerLayoutList: true
     }
   }
 ```
+:tada: :100: :cat: :heart: :sunflower: :rose: :apple: :man: :fire:
 
 ``` json
 {
