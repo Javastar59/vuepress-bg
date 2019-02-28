@@ -20,7 +20,7 @@
     text-align center
   }
   img{
-    height 350px
+    height 330px
     margin-left 160px
   }
   .back-home{
