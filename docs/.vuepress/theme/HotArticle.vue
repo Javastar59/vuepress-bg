@@ -13,14 +13,14 @@
 
   const hotArticle = [
     {
-      title: '深入理解js原型和闭包系列',
-      link: '/fe/yuanxing.html'
+      title: 'java核心知识点',
+      link: '/java.html'
     }, {
-      title: '前端面试整理',
-      link: '/fe/interview.html'
+      title: 'spring原理',
+      link: '/spring.html'
     }, {
       title: '平时收藏的一些技术网站网站',
-      link: '/fe/collection.html'
+      link: '/collection.html'
     }
   ];
 
