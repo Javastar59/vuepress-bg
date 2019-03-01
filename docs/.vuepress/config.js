@@ -4,7 +4,6 @@ module.exports = {
   markdown: {
     lineNumbers: true
   },
-  plugins: ['@vuepress/back-to-top',true],
   locales: {
     '/': {
       lang: 'zh-CN',

@@ -6,9 +6,9 @@
         <img class="user-img" src="/user-img.jpg" />
       </div>
       <div>
-        <div class="info">姓名：曹兴</div>
-        <div class="info">昵称：star</div>
-        <div class="info">爱好：电影</div>
+        <div class="info">姓名：  曹兴</div>
+        <div class="info">昵称：  star</div>
+        <div class="info">爱好：  电影</div>
         <div class="info">简介：一枚Java开发程序猿</div>
       </div>
       <a class="more-about" href="/about/">更多</a>

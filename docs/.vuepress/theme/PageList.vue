@@ -2,6 +2,13 @@
   <div class="d-page">
     <div class="d-page-left">
       <div class="item-list-box" v-if="list.length > 0">
+        <div class="item-head">文章分类
+          <span>
+            <a href="/essay/">Java</a>
+            <a href="/fe/">Docker</a>
+            <a href="/spring/">Spring</a>
+          </span>
+        </div>
         <div
           class="item-list"
           v-for="(item, index) in list"
@@ -120,6 +127,23 @@
       .item-list-box{
         width 100%
       }
+      .item-head {
+        background #fff
+        border-radius 2px
+        border-bottom 1px solid #eee
+        padding 20px
+        span {
+          margin-left 400px
+          a {
+            padding 8px
+            color #707780
+            &:hover{
+              cursor pointer
+              color #007fff
+            }
+          }
+        }
+      }
       .item-list {
         background #fff
         border-radius 2px
@@ -192,6 +216,9 @@
     .d-page {
       width 100%
       margin: 10px auto
+      .item-head{
+        display none
+      }
       .d-page-left{
         width 100%
       }
