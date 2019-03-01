@@ -37,7 +37,8 @@ export default {
 <style lang="stylus">
 .home
   height 100vh
-  background #f8f8f8
+  /*background #f8f8f8*/
+  background-image:url('/back.jpg')
   display flex
   justify-content center
   align-items center
