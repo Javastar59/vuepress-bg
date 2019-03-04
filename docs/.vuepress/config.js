@@ -12,7 +12,7 @@ module.exports = {
     }
   },
   head: [
-    ['link', { rel: 'icon', type: "image/png", href: '/favicon.png' }],
+    ['link', { rel: 'icon', type: "image/png", href: 'https://cdn.star59.top/favicon.png' }],
     ['meta', { name: 'baidu-site-verification', content: 'TSXvc1KyeR' }]
   ],
   themeConfig: {
