@@ -17,7 +17,7 @@ module.exports = {
   ],
   themeConfig: {
     search: true ,
-    logo: '/logo.png',
+    logo: 'http://cdn.star59.top/logo.png',
     nav: [
       {
         text: '首页',

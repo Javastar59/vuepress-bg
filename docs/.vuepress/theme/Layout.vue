@@ -46,6 +46,9 @@
     </Page>
 
     <SWUpdatePopup :updateEvent="swUpdateEvent"/>
+
+    <BackToTop/>
+
   </div>
 </template>
 
@@ -57,10 +60,11 @@ import Navbar from './Navbar.vue'
 import Page from './Page.vue'
 import Sidebar from './Sidebar.vue'
 import SWUpdatePopup from './SWUpdatePopup.vue'
+import BackToTop from './BackToTop.vue'
 import { resolveSidebarItems } from './util'
 
 export default {
-  components: { Home, Page, Sidebar, Navbar, SWUpdatePopup },
+  components: { Home, Page, Sidebar, Navbar, SWUpdatePopup, BackToTop },
 
   data () {
     return {
@@ -121,7 +125,7 @@ export default {
 
   mounted () {
     window.addEventListener('scroll', this.onScroll)
-    
+
 
     // configure progress bar
     nprogress.configure({ showSpinner: false })

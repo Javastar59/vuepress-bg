@@ -75,3 +75,8 @@ cd ..
 | col 3 is      | right-aligned | $1600 |
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
+
+插入图片试试
+<picture>
+  <img class="search-snap" alt="Image" src="http://cdn.star59.top/markdown.jpg">
+</picture>

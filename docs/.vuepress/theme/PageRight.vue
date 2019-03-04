@@ -3,7 +3,7 @@
     <div class="about-me">
       <div class="title">关于作者</div>
       <div>
-        <img class="user-img" src="/user-img.jpg" />
+        <img class="user-img" src="http://cdn.star59.top/user-img.jpg" />
       </div>
       <div>
         <div class="info">姓名：  曹兴</div>

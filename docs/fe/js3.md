@@ -15,8 +15,7 @@ customerLayoutList: true
 如图所示：
     
 <picture>
-  <source srcset="/prototype/superType.jpg">
-  <img class="search-snap" alt="Image">
+  <img class="search-snap" alt="Image" src="/prototype/superType.jpg" data-action="zoom">
 </picture>
 
 如上图所示，SuperType是一个函数，右侧就是它的原型。
@@ -24,8 +23,7 @@ customerLayoutList: true
 原型既然作为对象（属性的集合），不可能就只有一个constructor来玩，肯定可以自定义的增加许多属性。例如这位Object大哥，人家的prototype里面，就有好多属性。
 
 <picture>
-  <source srcset="/prototype/object.jpg">
-  <img class="search-snap" alt="Image">
+  <img class="search-snap" alt="Image" src="/prototype/object.jpg">
 </picture>
 
 你也可以在自己定义的方法的prototype中增加自己的属性:
@@ -40,8 +38,7 @@ customerLayoutList: true
 以图示来说的话，就是：
 
 <picture>
-  <source srcset="/prototype/fn.jpg">
-  <img class="search-snap" alt="Image">
+  <img class="search-snap" alt="Image" src="/prototype/fn.jpg">
 </picture>
 
 但是，这样有何用呢？ -- 解决这个问题，咱们还是先说说jQuery吧。
