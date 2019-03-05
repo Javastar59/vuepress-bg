@@ -4,11 +4,12 @@
       <div class="item-list-box" v-if="list.length > 0">
         <div class="item-head">文章分类
           <span>
-            <a href="/essay/" :class="pathStr == '/essay/'?'bluer':''">推荐</a>|
-            <a href="/fe/" :class="pathStr == '/fe/'?'bluer':''">前端</a>|
-            <a href="/java/" :class="pathStr == '/java/'?'bluer':''">JAVA后端</a>|
-            <a href="/mysql/" :class="pathStr == '/spring/'?'bluer':''">数据库</a>|
-            <a href="/docker/" :class="pathStr == '/spring/'?'bluer':''">运维</a>
+            <a href="/essay/" :class="pathStr == '/essay/'?'bluer':''">推荐</a>
+            <a href="/front/" :class="pathStr == '/front/'?'bluer':''">前端</a>
+            <a href="/java/" :class="pathStr == '/java/'?'bluer':''">JAVA后端</a>
+            <a href="/database/" :class="pathStr == '/database/'?'bluer':''">数据库</a>
+            <a href="/deploy/" :class="pathStr == '/deploy/'?'bluer':''">运维</a>
+            <a href="/others/" :class="pathStr == '/others/'?'bluer':''">运维</a>
           </span>
         </div>
         <div
@@ -135,11 +136,13 @@
         border-radius 2px
         border-bottom 1px solid #eee
         padding 20px
+        font-size 16px
+        font-weight bold
         .bluer{
           color #007fff
         }
         span {
-          margin-left 280px
+          margin-left 250px
           a {
             padding 5px
             color #707780

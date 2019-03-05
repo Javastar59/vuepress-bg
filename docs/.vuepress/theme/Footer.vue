@@ -1,6 +1,6 @@
 <template>
   <div class="d-footer">
-    ©2018 Copyright star59-2019-All Rights Reserved  <a href="#"></a>
+    ©2019 Copyright star-All Rights Reserved  <a href="#"></a>
   </div>
 </template>
 
