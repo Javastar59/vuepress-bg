@@ -4,9 +4,11 @@
       <div class="item-list-box" v-if="list.length > 0">
         <div class="item-head">文章分类
           <span>
-            <a href="/essay/">Java</a>
-            <a href="/fe/">Docker</a>
-            <a href="/spring/">Spring</a>
+            <a href="/essay/" :class="pathStr == '/essay/'?'bluer':''">推荐</a>|
+            <a href="/fe/" :class="pathStr == '/fe/'?'bluer':''">前端</a>|
+            <a href="/java/" :class="pathStr == '/java/'?'bluer':''">JAVA后端</a>|
+            <a href="/mysql/" :class="pathStr == '/spring/'?'bluer':''">数据库</a>|
+            <a href="/docker/" :class="pathStr == '/spring/'?'bluer':''">运维</a>
           </span>
         </div>
         <div
@@ -25,7 +27,6 @@
           </div>
           <div class="item-list-title">{{ item.title }}</div>
           <div class="item-list-content">
-            <!-- <img v-if="item.img" :src="item.img" class="image"> -->
             <div class="description">
               {{ item.description }}
             </div>
@@ -50,7 +51,8 @@
       return {
         pageNo: 1,
         pageSize: 2,
-        currentLen: 0
+        currentLen: 0,
+        pathStr: ''
       }
     },
 
@@ -60,6 +62,7 @@
 
     computed: {
       items () {
+        this.pathStr = this.$page.path;
         return this.$page.frontmatter.items
       },
 
@@ -132,10 +135,13 @@
         border-radius 2px
         border-bottom 1px solid #eee
         padding 20px
+        .bluer{
+          color #007fff
+        }
         span {
-          margin-left 400px
+          margin-left 280px
           a {
-            padding 8px
+            padding 5px
             color #707780
             &:hover{
               cursor pointer
