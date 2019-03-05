@@ -68,7 +68,6 @@
     v-else
   >
     <page-resource v-if="$page.frontmatter.customerLayoutResource"></page-resource>
-    <page-friends v-else-if="$page.frontmatter.customerLayoutFriends"></page-friends>
     <page-about v-else-if="$page.frontmatter.customerLayoutAbout"></page-about>
     <item-list v-else></item-list>
     <Footer></Footer>

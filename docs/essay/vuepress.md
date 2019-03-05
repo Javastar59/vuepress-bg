@@ -39,7 +39,7 @@ cd ..
 我是普通的文字段落
 
 ### 链接
-[我是百度](https://github.com/txs1992/focus-outside) 
+[我是百度](https://github.com/txs1992/focus-outside)
 
 ### 提示
 `我是标签类型的加重提示`
@@ -79,4 +79,8 @@ cd ..
 插入图片试试
 <picture>
   <img class="search-snap" alt="Image" src="https://cdn.star59.top/markdown.jpg">
+</picture>
+
+<picture>
+  <img class="medium-zoom-image" alt="Image" src="https://cdn.star59.top/markdown.jpg">
 </picture>
