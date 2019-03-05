@@ -9,7 +9,7 @@
             <a href="/java/" :class="pathStr == '/java/'?'bluer':''">JAVA后端</a>
             <a href="/database/" :class="pathStr == '/database/'?'bluer':''">数据库</a>
             <a href="/deploy/" :class="pathStr == '/deploy/'?'bluer':''">运维</a>
-            <a href="/others/" :class="pathStr == '/others/'?'bluer':''">运维</a>
+            <a href="/others/" :class="pathStr == '/others/'?'bluer':''">其他</a>
           </span>
         </div>
         <div
@@ -160,6 +160,7 @@
         padding 20px
         &:hover{
           background #e9f2f7
+          /*box-shadow:0px 3px 3px #c8c8c8*/
           cursor pointer
         }
         &:hover .item-list-title{

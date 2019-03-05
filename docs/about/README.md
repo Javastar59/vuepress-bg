@@ -6,11 +6,11 @@ customerLayoutAbout: true
 practiceList:
   - time: 2018.07 ~ 至今
     title: 正式
-    company: 博智微讯
+    company: 博智维讯
     content: 主要负责后台运营系统的维护与开发。
   - time: 2018.03 ~ 2018.07
     title: 实习
-    company: 博智微讯
+    company: 博智维讯
     content: 主要负责后台运营系统的维护与开发；
 
 skillList:

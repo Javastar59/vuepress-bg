@@ -1,5 +1,5 @@
 ---
-title: markdown写法
+title: 基于VuePress搭建个人网站
 conmment: true
 customerLayoutList: true
 ---
@@ -81,6 +81,4 @@ cd ..
   <img class="search-snap" alt="Image" src="https://cdn.star59.top/markdown.jpg">
 </picture>
 
-<picture>
-  <img class="medium-zoom-image" alt="Image" src="https://cdn.star59.top/markdown.jpg">
-</picture>
+
