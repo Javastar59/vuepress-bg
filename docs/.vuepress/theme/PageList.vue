@@ -4,12 +4,12 @@
       <div class="item-list-box" v-if="list.length > 0">
         <div class="item-head">文章分类
           <span>
-            <a href="/essay/" :class="pathStr == '/essay/'?'bluer':''">推荐</a>
-            <a href="/front/" :class="pathStr == '/front/'?'bluer':''">前端</a>
-            <a href="/java/" :class="pathStr == '/java/'?'bluer':''">JAVA后端</a>
-            <a href="/database/" :class="pathStr == '/database/'?'bluer':''">数据库</a>
-            <a href="/deploy/" :class="pathStr == '/deploy/'?'bluer':''">运维</a>
-            <a href="/others/" :class="pathStr == '/others/'?'bluer':''">其他</a>
+            <a :class="pathStr == '/essay/'?'bluer':''" @click="handlerLink('/essay/')">推荐</a>
+            <a :class="pathStr == '/front/'?'bluer':''" @click="handlerLink('/front/')">前端</a>
+            <a :class="pathStr == '/java/'?'bluer':''" @click="handlerLink('/java/')">JAVA后端</a>
+            <a :class="pathStr == '/database/'?'bluer':''" @click="handlerLink('/database/')">数据库</a>
+            <a :class="pathStr == '/deploy/'?'bluer':''" @click="handlerLink('/deploy/')">运维</a>
+            <a :class="pathStr == '/others/'?'bluer':''" @click="handlerLink('/others/')">其他</a>
           </span>
         </div>
         <div
@@ -86,6 +86,10 @@
     },
 
     methods: {
+
+      handlerLink (link) {
+        this.$router.push(link)
+      },
 
       handlerClick (link) {
         this.$router.push(this.$page.path + link + '.html')
