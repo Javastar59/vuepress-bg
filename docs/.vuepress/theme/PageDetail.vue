@@ -12,10 +12,18 @@
 </template>
 
 <script>
+  import zoom from 'medium-zoom'
   import PageRight from './PageRight.vue'
   import Footer from './Footer'
 
   export default {
+
+    mounted () {
+      setTimeout(() => {
+        zoom('.content img')
+      }, 1000)
+    },
+
     computed: {
       title() {
         return this.$page.frontmatter.title
@@ -26,6 +34,7 @@
     },
 
     components: {
+      zoom,
       PageRight,
       Footer
     }
@@ -34,6 +43,14 @@
 
 <style lang="stylus">
   @import './styles/config.styl'
+
+  .medium-zoom-overlay {
+    z-index: 100;
+  }
+
+  .medium-zoom-overlay ~ img {
+    z-index: 101;
+  }
 
   .page-detail{
     .container{
@@ -61,7 +78,7 @@
     }
     .leancloud-visitors{
       text-align right
-      padding 0 8px 8px 0 
+      padding 0 8px 8px 0
       span{
         font-size 12px
         color #999

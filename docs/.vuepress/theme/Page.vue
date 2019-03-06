@@ -81,7 +81,6 @@ import PageDetail from './PageDetail'
 import PageResource from './PageResource'
 import Footer from './Footer'
 import PageAbout from './PageAbout'
-import zoom from 'medium-zoom'
 
 
 export default {
@@ -93,12 +92,6 @@ export default {
     Footer,
     PageResource,
     PageAbout
-  },
-
-  mounted () {
-    setTimeout(() => {
-      zoom('.content img')
-    }, 1000)
   },
 
   computed: {
@@ -267,14 +260,6 @@ function find (page, items, offset) {
     overflow auto // clear float
   .next
     float right
-
-.medium-zoom-overlay {
-  z-index: 100;
-}
-
-.medium-zoom-overlay ~ img {
-  z-index: 101;
-}
 
 @media (max-width: $MQMobile)
   .page-edit
