@@ -63,3 +63,4 @@ com.android.settings.UserDictionarySettings 用户词典
 com.android.settings.VoiceInputOutputSettings 语音输入与输出设置 
 com.android.settings.WirelessSettings 无线和网络设置
 ```
+
