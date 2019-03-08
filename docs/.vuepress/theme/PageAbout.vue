@@ -17,7 +17,7 @@
           </section>
           <section class="info ml">
             <div><a href="https://www.star59.top/">https://www.star59.top</a></div>
-            <div><a href="#">star59@163.com</a></div>
+            <div><a href="#">sunstar59@163.com</a></div>
             <div>15389673176</div>
           </section>
         </div>
