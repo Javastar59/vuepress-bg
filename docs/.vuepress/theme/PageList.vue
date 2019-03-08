@@ -139,7 +139,7 @@
         background #fff
         border-radius 2px
         border-bottom 1px solid #eee
-        padding 20px
+        padding 17px
         font-size 16px
         font-weight bold
         .bluer{
@@ -161,10 +161,11 @@
         background #fff
         border-radius 2px
         border-bottom 1px solid #eee
+        border-left 1px solid #eee
+        border-right 1px solid #eee
         padding 20px
         &:hover{
-          background #e9f2f7
-          /*box-shadow:0px 3px 3px #c8c8c8*/
+          background #f6f6f6
           cursor pointer
         }
         &:hover .item-list-title{
@@ -181,7 +182,6 @@
           font-size: 14px;
           color: #707780;
           line-height: 1.5;
-          // letter-spacing: 2px;
           margin-bottom 10px
         }
         .item-list-foot{
