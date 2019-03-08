@@ -4,6 +4,8 @@ conmment: true
 customerLayoutList: true
 ---
 
+![mysql](https://cdn.star59.top/mysql.png)
+
 ### MySQL 优化
 
 - 表关联查询时务必遵循 **小表驱动大表** 原则；

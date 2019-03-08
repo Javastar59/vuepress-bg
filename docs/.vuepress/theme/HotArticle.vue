@@ -1,6 +1,6 @@
 <template>
   <div class="hot-article">
-    <div class="title">热门文章</div>
+    <div class="title">最近更新</div>
     <ul>
       <li v-for="item in hotArticle" :key="item.link">
         <a target="_blank" :href="item.link">{{item.title}}</a>
