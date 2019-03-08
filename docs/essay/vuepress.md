@@ -3,6 +3,8 @@ title: 基于VuePress搭建个人网站
 conmment: true
 customerLayoutList: true
 ---
+![vuepress](https://cdn.star59.top/vuepress.png)
+
 ### vuepress 是什么？
 
 Vue 驱动的静态网站生成器
