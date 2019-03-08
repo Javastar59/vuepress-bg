@@ -3,7 +3,9 @@
     <div class="about-me">
       <div class="title">关于作者</div>
       <div>
-        <img class="user-img" src="https://cdn.star59.top/user-img.jpg" />
+        <a href="/about/">
+          <img class="user-img" src="https://cdn.star59.top/user-img.jpg" />
+        </a>
       </div>
       <div>
         <div class="info">姓名：曹兴</div>
@@ -48,6 +50,10 @@
         border-radius 35px
         display block
         margin 10px auto
+        -webkit-transition: -webkit-transform 1s ease-out;
+        &:hover{
+          transform: rotate(360deg) scale(1)
+        }
       }
       .info{
         font-size 14px
