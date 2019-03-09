@@ -30,11 +30,10 @@
 
     methods: {
       click(){
+        if (/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)) { //移动端
+          return false;
+        }
         if(!screenfull.enabled){
-          this.$message({
-            message: '你的浏览器不支持全屏',
-            type: 'warning'
-          })
           return false
         }else {
           screenfull.toggle();
