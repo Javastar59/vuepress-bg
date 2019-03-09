@@ -22,7 +22,8 @@
     "vuepress": "^0.14.10"
   },
   "dependencies": {
+    "lodash.debounce": "^4.0.8",
     "medium-zoom": "^0.4.0",
-    "lodash.debounce": "^4.0.8"
+    "screenfull": "^4.0.1"
   }
 }
