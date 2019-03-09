@@ -1,5 +1,5 @@
 <template>
-  <div class="hot-article">
+  <div :class="barFixed === true ? 'fixed':'hot-article'">
     <div class="title">最近更新</div>
     <ul>
       <li v-for="item in hotArticle" :key="item.link">
@@ -13,28 +13,86 @@
 
   const hotArticle = [
     {
-      title: 'java核心知识点',
-      link: '/java.html'
+      title: '基于VuePress搭建个人网站',
+      link: '/essay/vuepress.html'
     }, {
-      title: 'spring原理',
-      link: '/spring.html'
+      title: 'MySQL性能优化',
+      link: '/database/mysql1.html'
     }, {
-      title: '平时收藏的一些技术网站网站',
-      link: '/collection.html'
+      title: 'Docker学习笔记',
+      link: '/deploy/docker1.html'
     }
   ];
 
   export default {
     data() {
       return {
-        hotArticle: hotArticle
+        hotArticle: hotArticle,
+        barFixed: false
       }
+    },
+    mounted () {
+      window.addEventListener('scroll', this.handleScroll)
+    },
+    methods: {
+      handleScroll () {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+        console.log(scrollTop)
+        if (scrollTop > 290) {
+          this.barFixed = true;
+        }else {
+          this.barFixed = false
+        }
+      }
+    },
+    destroyed () {
+      window.removeEventListener('scroll', this.handleScroll)
     }
   }
 </script>
 
 <style lang="stylus">
   @import './styles/config.styl'
+  .fixed{
+    background #ffffff
+    border-radius 2px
+    text-align left
+    position fixed
+    top 70px
+    width 249px
+    .title{
+      font-size 16px
+      padding 10px 16px
+      border-bottom 1px solid #f3f3f3
+    }
+    ul{
+      list-style none
+      padding-right 20px
+      li{
+        font-size 12px
+        overflow hidden
+        white-space pre-wrap
+        word-wrap break-word
+        margin-bottom 10px
+        a{
+          color #666
+          &:hover{
+            color #20a0ff
+          }
+        }
+        &:before{
+          content ''
+          display inline-block
+          width 4px
+          height 4px
+          border-radius 2px
+          background #666
+          margin-right 10px
+          vertical-align middle
+        }
+      }
+    }
+  }
   .hot-article{
     background #ffffff
     border-radius 2px

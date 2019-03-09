@@ -3,9 +3,9 @@ component: item-list
 customerLayout: true
 customerLayoutList: true
 items:
-  - title: adb常用操作命令
-    description: adb常用操作命令。
-    link: abd
+  - title: 从命令行启动Xcode模拟器
+    description: 从命令行启动Xcode模拟器。
+    link: cmdxcode
     date: 2019/01/30
-    tags: abd
+    tags: Xcode
 ---
