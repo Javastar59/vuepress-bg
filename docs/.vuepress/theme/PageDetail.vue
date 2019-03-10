@@ -1,14 +1,12 @@
 <template>
   <div class="page-detail">
     <div class="container">
-      <fullscreen ref="fullscreen" @change="fullscreenChange">
-        <div :class="fullscreen ? 'full-content':'page-detail-content'">
+        <div class="page-detail-content">
           <div class="title" >
             <span @click="toggle">{{title}}</span>
           </div>
           <Content/>
         </div>
-      </fullscreen>
       <page-right></page-right>
     </div>
     <Footer></Footer>
@@ -16,32 +14,11 @@
 </template>
 
 <script>
-  import Vue from 'vue'
   import zoom from 'medium-zoom'
   import PageRight from './PageRight.vue'
   import Footer from './Footer'
-  import fullscreen from 'vue-fullscreen'
-  Vue.use(fullscreen)
 
   export default {
-
-    data(){
-      return {
-        fullscreen: false
-      }
-    },
-
-    methods: {
-      toggle () {
-        if (/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)) {
-          return;
-        }
-        this.$refs['fullscreen'].toggle();
-      },
-      fullscreenChange (fullscreen) {
-        this.fullscreen = fullscreen
-      }
-    },
 
     mounted () {
       setTimeout(() => {
@@ -77,33 +54,6 @@
     z-index: 101;
   }
 
-  .full-content{
-      width 100%
-      float left
-      border-radius 2px
-      background #ffffff
-      img{
-        max-width 1200px
-        width 100%
-      }
-      .title{
-        font-size 26px
-        font-weight bold
-        padding 20px
-        border-bottom: 1px solid #eaecef;
-        span {
-          &:hover{
-            cursor pointer
-            color #007fff
-          }
-        }
-      }
-      .line{
-        height 10px
-        width 100%
-        background #f3f3f3
-      }
-    }
   .page-detail{
     .container{
       overflow hidden
@@ -121,12 +71,6 @@
         font-weight bold
         padding 20px
         border-bottom: 1px solid #eaecef;
-        span {
-          &:hover{
-            cursor pointer
-            color #007fff
-          }
-        }
       }
       .line{
         height 10px
@@ -157,9 +101,6 @@
       .page-detail-content{
         width 100%
         float none
-        .title span{
-          pointer-events none
-        }
       }
     }
   }
