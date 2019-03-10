@@ -2,7 +2,7 @@
   <div class="page-detail">
     <div class="container">
       <div class="page-detail-content">
-        <div class="title" @click="click">
+        <div class="title">
           <span>{{title}}</span>
         </div>
         <Content />
@@ -15,33 +15,10 @@
 
 <script>
   import zoom from 'medium-zoom'
-  import screenfull from 'screenfull'
   import PageRight from './PageRight.vue'
   import Footer from './Footer'
 
   export default {
-    name: "screenfull",
-
-    data(){
-      return {
-        isFullscreen: false
-      }
-    },
-
-    methods: {
-      click(){
-        if(!screenfull.enabled){
-          this.$message({
-            message: '你的浏览器不支持全屏',
-            type: 'warning'
-          })
-          return false
-        }else {
-          screenfull.toggle();
-          this.isFullscreen = true;
-        }
-      }
-    },
 
     mounted () {
       setTimeout(() => {
@@ -94,12 +71,6 @@
         font-weight bold
         padding 20px
         border-bottom: 1px solid #eaecef;
-        span {
-          &:hover{
-            cursor pointer
-            color #007fff
-          }
-        }
       }
       .line{
         height 10px
