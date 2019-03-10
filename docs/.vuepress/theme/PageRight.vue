@@ -2,17 +2,11 @@
   <div class="d-page-right">
     <div class="about-me">
       <div class="title">关于作者</div>
-      <div>
-        <a href="/about/">
-          <img class="user-img" src="https://cdn.star59.top/user-img.jpg" />
-        </a>
-      </div>
-      <div>
+        <img class="user-img" src="https://cdn.star59.top/user-img.jpg" />
         <div class="info">姓名：曹兴</div>
         <div class="info">昵称：star</div>
         <div class="info">爱好：电影</div>
         <div class="info">简介：一枚Java开发程序猿</div>
-      </div>
       <a class="more-about" href="/about/">更多</a>
     </div>
     <hot-article></hot-article>
@@ -52,6 +46,7 @@
         margin 10px auto
         -webkit-transition: -webkit-transform 1s ease-out;
         &:hover{
+          cursor pointer
           transform: rotate(360deg) scale(1)
         }
       }
