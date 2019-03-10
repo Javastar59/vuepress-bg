@@ -17,7 +17,7 @@ export default {
   props: {
     threshold: {
       type: Number,
-      default: 200
+      default: 100
     }
   },
 
