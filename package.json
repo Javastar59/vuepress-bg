@@ -24,6 +24,6 @@
   "dependencies": {
     "lodash.debounce": "^4.0.8",
     "medium-zoom": "^0.4.0",
-    "screenfull": "^4.0.1"
+    "vue-fullscreen": "^2.1.5"
   }
 }

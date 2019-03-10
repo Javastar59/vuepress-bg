@@ -1,12 +1,14 @@
 <template>
   <div class="page-detail">
     <div class="container">
-      <div class="page-detail-content">
-        <div class="title" @click="click">
-          <span>{{title}}</span>
+      <fullscreen ref="fullscreen" @change="fullscreenChange">
+        <div :class="fullscreen ? 'full-content':'page-detail-content'">
+          <div class="title" >
+            <span @click="toggle">{{title}}</span>
+          </div>
+          <Content/>
         </div>
-        <Content />
-      </div>
+      </fullscreen>
       <page-right></page-right>
     </div>
     <Footer></Footer>
@@ -14,31 +16,30 @@
 </template>
 
 <script>
+  import Vue from 'vue'
   import zoom from 'medium-zoom'
-  import screenfull from 'screenfull'
   import PageRight from './PageRight.vue'
   import Footer from './Footer'
+  import fullscreen from 'vue-fullscreen'
+  Vue.use(fullscreen)
 
   export default {
-    name: "screenfull",
 
     data(){
       return {
-        isFullscreen: false
+        fullscreen: false
       }
     },
 
     methods: {
-      click(){
-        if (/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)) { //移动端
-          return false;
+      toggle () {
+        if (/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)) {
+          return;
         }
-        if(!screenfull.enabled){
-          return false
-        }else {
-          screenfull.toggle();
-          this.isFullscreen = true;
-        }
+        this.$refs['fullscreen'].toggle();
+      },
+      fullscreenChange (fullscreen) {
+        this.fullscreen = fullscreen
       }
     },
 
@@ -76,6 +77,33 @@
     z-index: 101;
   }
 
+  .full-content{
+      width 100%
+      float left
+      border-radius 2px
+      background #ffffff
+      img{
+        max-width 1200px
+        width 100%
+      }
+      .title{
+        font-size 26px
+        font-weight bold
+        padding 20px
+        border-bottom: 1px solid #eaecef;
+        span {
+          &:hover{
+            cursor pointer
+            color #007fff
+          }
+        }
+      }
+      .line{
+        height 10px
+        width 100%
+        background #f3f3f3
+      }
+    }
   .page-detail{
     .container{
       overflow hidden
@@ -129,6 +157,9 @@
       .page-detail-content{
         width 100%
         float none
+        .title span{
+          pointer-events none
+        }
       }
     }
   }
