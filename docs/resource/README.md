@@ -91,6 +91,24 @@ items:
         icon: https://cdn.star59.top/bg/20190311/mCDyeM6KkfTl.png
         des: 富有表现力的、动态的、健壮的CSS
         links: https://www.zhangxinxu.com/jq/stylus/
+  - itemTitle: Java
+    itemContent:
+      - title: Spring Framework
+        icon: https://cdn.star59.top/bg/20190311/RmGlfeToaG14.png
+        des: Spring框架是一个开源的Java平台,它提供了非常容易,非常迅速地开发健壮的Java应用程序的全面的基础设施支持
+        links: https://spring.io/projects/spring-framework/
+      - title: Spring Boot
+        icon: https://cdn.star59.top/bg/20190311/9oryCqQvnF7i.png
+        des: Spring Boot可以轻松创建独立的，生产级的基于Spring的应用程序
+        links: https://spring.io/projects/spring-boot/
+      - title: Spring Cloud
+        icon: https://cdn.star59.top/bg/20190311/klnIkRQxNm3K.png
+        des: 可以迅速搭建分布式系统中的公共组件
+        links: https://spring.io/projects/spring-cloud/
+      - title: Spring Data
+        icon: https://cdn.star59.top/bg/20190311/U64taK1Dujfi.png
+        des: 为数据访问提供熟悉且一致的基于Spring的编程模型
+        links: https://spring.io/projects/spring-data/
   - itemTitle: Node
     itemContent:
       - title: Node.js
@@ -105,10 +123,24 @@ items:
         icon: https://cdn.star59.top/bg/20190311/82LuC9foIXuA.png
         des: 基于 Node.js 平台的极简的 web 开发框架
         links: http://www.expressjs.com.cn/
-      - title: egg
-        icon: https://cdn.star59.top/bg/20190311/adF3x5yzeMrw.png
-        des: 阿里巴巴开发的企业级node应用
-        links: https://eggjs.org/
+  - itemTitle: 数据库
+    itemContent:
+      - title: MySQL
+        icon: https://cdn.star59.top/bg/20190311/maFvkLC7FlJo.png
+        des: 世界上最流行的开源数据库
+        links: https://www.mysql.com/
+      - title: Oracle
+        icon: https://cdn.star59.top/bg/20190311/mWPry9C2y4LT.png
+        des: 甲骨文公司的一款关系数据库管理系统
+        links: https://www.oracle.com/database/
+      - title: MongoDB
+        icon: https://cdn.star59.top/bg/20190311/ET8ioH9KWWf3.png
+        des: 基于分布式文件存储的数据库
+        links: https://www.mongodb.org/
+      - title: Redis
+        icon: https://cdn.star59.top/bg/20190311/UTQSuIunYfSE.png
+        des: Redis是一个开源的使用ANSI C语言编写、支持网络、可基于内存亦可持久化的日志型、Key-Value数据库
+        links: http://redisdoc.com/
   - itemTitle: 工具
     itemContent:
       - title: Webpack
@@ -131,4 +163,16 @@ items:
         icon: https://cdn.star59.top/bg/20190311/TpkNSnHc5jbE.jpg
         des:  JavaScript 模块打包器
         links: https://rollup.docschina.org/
+      - title: Git
+        icon: https://cdn.star59.top/bg/20190311/mvCSuXG2CmkS.png
+        des: Git是一个免费的开源分布式版本控制系统
+        links: https://git-scm.com/
+      - title: Maven
+        icon: https://cdn.star59.top/bg/20190311/BDkBj2w3DXMk.png
+        des: 采用纯Java编写的开源项目管理工具
+        links: http://maven.apache.org/
+      - title: Gradle
+        icon: https://cdn.star59.top/bg/20190311/OcMX0M6lGa8s.png
+        des:  基于Apache Ant和Apache Maven概念的项目自动化构建开源工具
+        links: https://gradle.org/
 ---
