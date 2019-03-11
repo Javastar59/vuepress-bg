@@ -8,5 +8,5 @@ features:
   target: false
 - title: 简历
   links: /about/
-  target: true
+  target: false
 ---
