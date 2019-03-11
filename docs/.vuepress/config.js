@@ -24,22 +24,9 @@ module.exports = {
         link: '/'
       }, {
         text: '随笔',
-        items: [
-          { text: '前端', items: [
-              { text: 'vue', link: '/vue/' },
-              { text: 'vuepress', link: '/vuepress/' }
-            ] },
-          { text: '后端', items: [
-              { text: 'java', link: '/java/' },
-              { text: 'spring boot', link: '/spring boot/' }
-            ] },
-          { text: '部署', items: [
-              { text: 'linux', link: '/linux/' },
-              { text: 'docker', link: '/docker/' }
-            ] }
-        ]
+        link: '/essay/'
       }, {
-        text: '工具文档',
+        text: '在线工具',
         items: [
           { text: '在线编辑', items: [
               { text: 'JSON 编辑器', link: 'https://www.bejson.com/jsoneditoronline/' },
@@ -50,11 +37,6 @@ module.exports = {
           { text: '在线服务', items: [
               { text: 'BOOT CDN', link: 'https://www.bootcdn.cn/' },
               { text: 'GOOGLE 字体加速', link: 'https://servers.ustclug.org/2014/06/blog-googlefonts-speedup/' }
-            ] },
-          { text: '在线文档', items: [
-              { text: 'VUE', link: 'https://cn.vuejs.org/v2/api/' },
-              { text: 'VUE PRESS', link: 'https://vuepress.vuejs.org/zh/default-theme-config/' },
-              { text: 'SPRING BOOT', link: 'https://spring.io/projects/spring-boot/#learn/' }
             ] },
           { text: '趋势分析', items: [
               { text: '百度指数', link: 'http://index.baidu.com/#/' },
