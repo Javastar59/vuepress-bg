@@ -13,7 +13,7 @@ module.exports = {
   },
   head: [
     ['link', { rel: 'icon', type: "image/png", href: 'https://cdn.star59.top/favicon.png' }],
-    ['meta', { name: 'baidu-site-verification', content: 'TSXvc1KyeR' }]
+    ['meta', { name: 'baidu-site-verification', content: 'aDxlDtobeu' }]
   ],
   themeConfig: {
     search: true ,
