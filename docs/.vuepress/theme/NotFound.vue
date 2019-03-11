@@ -1,7 +1,7 @@
 <template>
   <div class="page-404">
     <div class="content">
-      <img class="404-img" src="https://cdn.star59.top/404.png"/>
+      <img class="404-img" src="https://cdn.star59.top/bg/20190311/lQePS5Pk7suU.png"/>
       <div class="tips">对不起，页面迷路了，我们建议您...</div>
       <router-link to="/" class="back-home">返回首页</router-link>
     </div>

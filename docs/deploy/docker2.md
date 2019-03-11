@@ -4,7 +4,7 @@ conmment: true
 customerLayoutList: true
 ---
 
-![docker](https://cdn.star59.top/docker.jpg)
+![docker](https://cdn.star59.top/bg/20190311/v0NXKLNc4wOF.jpg)
 
 ### 获取镜像
 

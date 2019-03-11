@@ -3,7 +3,7 @@ title: 基于VuePress搭建个人网站
 conmment: true
 customerLayoutList: true
 ---
-![vuepress](https://cdn.star59.top/vuepress.png)
+![vuepress](https://cdn.star59.top/bg/20190311/MsuzAuH4CpIA.png)
 
 ### vuepress 是什么？
 
@@ -77,13 +77,13 @@ vuepress                     - 主工程目录
 
 **创建一个repository** 这个repository的名字还有要求必须是`<你的用户名>.github.io`，然后点击setting，在下面进行**如下配置：**
 
-![](https://cdn.star59.top/githubpage.png)
+![](https://cdn.star59.top/bg/20190311/I5NTz5MP3bO3.png)
 
 > 注意，如果选择了自定义域名，还需要配置dns解析到当前的GitHubPage
 
 这里以阿里云的云解析dns服务配置为例，为了防止IP改变配置失效，直接采用cname进行域名解析
 
-![](https://cdn.star59.top/githubpagedns.png)
+![](https://cdn.star59.top/bg/20190311/kvMjI1qatdv6.png)
 
 > 配置完dns解析后，大概需要五到十分钟生效
 

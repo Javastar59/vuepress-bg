@@ -4,7 +4,7 @@ conmment: true
 customerLayoutList: true
 ---
 
-![mysql](https://cdn.star59.top/mysql.png)
+![mysql](https://cdn.star59.top/bg/20190311/vue3bGcFGEut.png)
 
 ### MySQL 优化
 
