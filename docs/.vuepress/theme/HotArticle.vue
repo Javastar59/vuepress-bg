@@ -3,7 +3,7 @@
     <div class="title">最近更新</div>
     <ul>
       <li v-for="item in hotArticle" :key="item.link">
-        <a target="_blank" :href="item.link">{{item.title}}</a>
+        <a @click.prevent="toHotArticle(item.link)">{{item.title}}</a>
       </li>
     </ul>
   </div>
@@ -42,6 +42,9 @@
         }else {
           this.barFixed = false
         }
+      },
+      toHotArticle(link) {
+        this.$router.push(link)
       }
     },
     destroyed () {
@@ -76,6 +79,7 @@
         a{
           color #666
           &:hover{
+            cursor pointer
             color #20a0ff
           }
         }
@@ -115,6 +119,7 @@
         a{
           color #666
           &:hover{
+            cursor pointer
             color #20a0ff
           }
         }
