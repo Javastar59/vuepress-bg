@@ -5,7 +5,7 @@
         <div class="title">
           <span>{{title}}</span>
         </div>
-        <Content />
+        <Content/>
       </div>
       <page-right></page-right>
     </div>

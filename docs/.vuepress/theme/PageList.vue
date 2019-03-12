@@ -4,12 +4,12 @@
       <div class="item-list-box" v-if="list.length > 0">
         <div class="item-head">文章分类
           <span>
-            <a :class="pathStr == '/essay/'?'bluer':''" @click="handlerLink('/essay/')">推荐</a>
-            <a :class="pathStr == '/front/'?'bluer':''" @click="handlerLink('/front/')">前端</a>
-            <a :class="pathStr == '/java/'?'bluer':''" @click="handlerLink('/java/')">JAVA后端</a>
-            <a :class="pathStr == '/database/'?'bluer':''" @click="handlerLink('/database/')">数据库</a>
-            <a :class="pathStr == '/deploy/'?'bluer':''" @click="handlerLink('/deploy/')">运维</a>
-            <a :class="pathStr == '/others/'?'bluer':''" @click="handlerLink('/others/')">其他</a>
+            <a :class="pathStr == '/essay/'?'bluer':''" @click.prevent="handlerLink('/essay/')">推荐</a>
+            <a :class="pathStr == '/front/'?'bluer':''" @click.prevent="handlerLink('/front/')">前端</a>
+            <a :class="pathStr == '/java/'?'bluer':''" @click.prevent="handlerLink('/java/')">JAVA后端</a>
+            <a :class="pathStr == '/database/'?'bluer':''" @click.prevent="handlerLink('/database/')">数据库</a>
+            <a :class="pathStr == '/deploy/'?'bluer':''" @click.prevent="handlerLink('/deploy/')">运维</a>
+            <a :class="pathStr == '/others/'?'bluer':''" @click.prevent="handlerLink('/others/')">其他</a>
           </span>
         </div>
         <div
