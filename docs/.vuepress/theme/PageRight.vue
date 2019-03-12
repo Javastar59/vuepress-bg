@@ -68,6 +68,9 @@
         width 100%
         font-size 12px
         display inline-block
+        &:hover{
+          cursor pointer
+        }
       }
     }
   }
