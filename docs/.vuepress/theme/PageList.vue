@@ -10,24 +10,27 @@
             <a :class="pathStr == '/database/'?'bluer':''" @click.prevent="handlerLink('/database/')">数据库</a>
             <a :class="pathStr == '/deploy/'?'bluer':''" @click.prevent="handlerLink('/deploy/')">运维</a>
             <a :class="pathStr == '/others/'?'bluer':''" @click.prevent="handlerLink('/others/')">其他</a>
-            <a @click.prevent="test1('Vuepress1')">test</a>
           </span>
         </div>
         <div
           class="item-list"
           v-for="(item, index) in list"
-          :key="index"
-          @click="handlerClick(item.link)"
-        >
+          :key="index">
           <div class="item-list-foot">
-            <div class="tags">
-              <span class="tag">{{item.tags}}</span>
+            <div class="tags" >
+              <span class="tag" @click="handlerTag(item.tags)">
+                <span :class="tagStatus == ''?'':'tag-color'"> * </span>
+                {{item.tags}}</span>
             </div>
             <div class="date">
               {{ item.date }}
             </div>
           </div>
-          <div class="item-list-title">{{ item.title }}</div>
+          <div class="item-list-title">
+            <span class="title-content" @click="handlerClick(item.link)">
+              {{ item.title }}
+            </span>
+          </div>
           <div class="item-list-content">
             <div class="description">
               {{ item.description }}
@@ -101,10 +104,9 @@
 
     methods: {
 
-      test1(tag) {
+      handlerTag(tag) {
         this.tagStatus = '';
         this.tagStatus = tag;
-        console.log(this.currentLen)
       },
 
       handlerLink (link) {
@@ -190,10 +192,6 @@
         padding 20px
         &:hover{
           background #f6f6f6
-          cursor pointer
-        }
-        &:hover .item-list-title{
-          color #20a0ff
         }
         .item-list-title{
           font-size 18px
@@ -226,9 +224,22 @@
               font-size 12px
               color #20a0ff
               border 1px solid #20a0ff
+              &:hover{
+                cursor pointer
+              }
             }
           }
         }
+      }
+      .title-content{
+        &:hover {
+          cursor pointer
+          color #20a0ff
+        }
+      }
+      .tag-color{
+        color red
+        font-weight bold
       }
       .get-more{
         width 100%
