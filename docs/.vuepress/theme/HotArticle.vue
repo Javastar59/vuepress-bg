@@ -37,7 +37,7 @@
     methods: {
       handleScroll () {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-        if (scrollTop > 290) {
+        if (scrollTop > 440) {
           this.barFixed = true;
         }else {
           this.barFixed = false

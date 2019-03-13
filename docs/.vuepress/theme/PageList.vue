@@ -43,12 +43,35 @@
         抱歉，暂时还没有更新！
       </div>
     </div>
-    <page-right></page-right>
+    <div class="d-page-right">
+      <div class="about-me">
+        <div class="title">关于作者</div>
+        <img class="user-img" src="https://cdn.star59.top/user-img.jpg" @click.prevent="toAbout('/about/')" />
+        <div class="info">姓名：曹兴</div>
+        <div class="info">昵称：star</div>
+        <div class="info">爱好：电影</div>
+        <div class="info">简介：一枚Java开发程序猿</div>
+        <a class="more-about" @click.prevent="toAbout('/about/')">更多</a>
+      </div>
+
+      <div class="hot-tags">
+        <div class="title">文章标签</div>
+        <ul>
+          <li v-for="item in singleTagLists">
+            <a @click.prevent="handlerTag(item)">{{item}}</a>
+          </li>
+        </ul>
+      </div>
+
+      <hot-article></hot-article>
+    </div>
+
   </div>
 </template>
 
 <script>
   import PageRight from './PageRight.vue'
+  import HotArticle from './HotArticle'
 
   export default {
     data () {
@@ -59,17 +82,20 @@
         pathStr: '',
         tagStatus: '',
         filterGetSize: 0,
-        filterGetList: []
+        filterGetList: [],
+        singleTagLists: []
       }
     },
 
     components: {
-      PageRight
+      PageRight, HotArticle
     },
 
     computed: {
       items () {
         this.pathStr = this.$page.path;
+        let arr = this.$page.frontmatter.items.map(value => value.tags);
+        this.singleTagLists = [...new Set(arr)];
         return this.$page.frontmatter.items
       },
 
@@ -103,6 +129,10 @@
     },
 
     methods: {
+
+      toAbout(link) {
+        this.$router.push(link)
+      },
 
       handlerTag(tag) {
         this.tagStatus = '';
@@ -261,6 +291,93 @@
       color #6a8bad
     }
   }
+  .d-page-right{
+    width 26%
+    float left
+    margin-left 2%
+    border-radius 2px
+    text-align left
+    .about-me{
+      background #ffffff
+      .title{
+        font-size 16px
+        padding 10px 16px
+        border-bottom 1px solid #f3f3f3
+      }
+      .user-img{
+        width 70px
+        height 70px
+        border-radius 35px
+        display block
+        margin 10px auto
+        -webkit-transition: -webkit-transform 1s ease-out;
+        &:hover{
+          cursor pointer
+          transform: rotate(360deg) scale(1)
+        }
+      }
+      .info{
+        font-size 14px
+        color #666
+        margin 10px 20px
+      }
+      .more-about{
+        text-align center
+        height 30px
+        line-height 30px
+        border-top 1px solid #eeeeee
+        width 100%
+        font-size 12px
+        display inline-block
+        &:hover{
+          cursor pointer
+        }
+      }
+    }
+  }
+  .hot-tags{
+    background #ffffff
+    border-radius 2px
+    text-align left
+    margin-top 20px
+    padding-bottom 10px
+    .title{
+      font-size 16px
+      padding 10px 16px
+      border-bottom 1px solid #f3f3f3
+    }
+    ul{
+      list-style none
+      padding-right 20px
+      li{
+        font-size 12px
+        overflow hidden
+        white-space pre-wrap
+        word-wrap break-word
+        margin-bottom 10px
+        a{
+          color #666
+          &:hover{
+            cursor pointer
+            color #20a0ff
+          }
+        }
+        &:before{
+          content ''
+          display inline-block
+          width 4px
+          height 4px
+          border-radius 2px
+          background #666
+          margin-right 10px
+          vertical-align middle
+        }
+      }
+    }
+  }
+  .sel-hot-tags{
+    color #20a0ff
+  }
   @media screen and (max-width: $MQMobile) {
     .d-page {
       width 100%
@@ -271,6 +388,9 @@
       .d-page-left{
         width 100%
       }
+    }
+    .d-page-right{
+      display none
     }
   }
 </style>
