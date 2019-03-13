@@ -56,11 +56,7 @@
 
       <div class="hot-tags">
         <div class="title">文章标签</div>
-        <ul>
-          <li v-for="item in singleTagLists">
-            <a @click.prevent="handlerTag(item)">{{item}}</a>
-          </li>
-        </ul>
+        <span :class=" tagStatus == item ? 'tag-danger' : 'tag-success'" v-for="item in singleTagLists" @click.prevent="handlerTag(item)" >{{item}}</span>
       </div>
 
       <hot-article></hot-article>
@@ -247,13 +243,15 @@
           .tags{
             float left
             .tag{
+              background-color: rgba(64,158,255,.1)
+              border-radius: 4px;
+              box-sizing: border-box;
+              border: 1px solid rgba(64,158,255,.2);
               float left
               margin-right 6px
-              border-radius 2px
               padding 0 8px
               font-size 12px
               color #20a0ff
-              border 1px solid #20a0ff
               &:hover{
                 cursor pointer
               }
@@ -346,32 +344,38 @@
       padding 10px 16px
       border-bottom 1px solid #f3f3f3
     }
-    ul{
-      list-style none
-      padding-right 20px
-      li{
-        font-size 12px
-        overflow hidden
-        white-space pre-wrap
-        word-wrap break-word
-        margin-bottom 10px
-        a{
-          color #666
-          &:hover{
-            cursor pointer
-            color #20a0ff
-          }
-        }
-        &:before{
-          content ''
-          display inline-block
-          width 4px
-          height 4px
-          border-radius 2px
-          background #666
-          margin-right 10px
-          vertical-align middle
-        }
+    .tag-success{
+      background-color: rgba(64,158,255,.1);
+      display: inline-block;
+      padding: 0 10px;
+      margin 3px 5px;
+      height: 32px;
+      line-height: 30px;
+      font-size: 12px;
+      color: #409eff;
+      border-radius: 4px;
+      box-sizing: border-box;
+      border: 1px solid rgba(64,158,255,.2);
+      white-space: nowrap;
+      &:hover{
+        cursor pointer
+      }
+    }
+    .tag-danger{
+      background-color: rgba(245,108,108,.1);
+      color: #f56c6c;
+      display: inline-block;
+      padding: 0 10px;
+      margin 3px 5px;
+      height: 32px;
+      line-height: 30px;
+      font-size: 12px;
+      border-radius: 4px;
+      box-sizing: border-box;
+      border: 1px solid rgba(245,108,108,.2);
+      white-space: nowrap;
+      &:hover{
+        cursor pointer
       }
     }
   }
