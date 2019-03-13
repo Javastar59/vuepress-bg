@@ -10,6 +10,7 @@
             <a :class="pathStr == '/database/'?'bluer':''" @click.prevent="handlerLink('/database/')">数据库</a>
             <a :class="pathStr == '/deploy/'?'bluer':''" @click.prevent="handlerLink('/deploy/')">运维</a>
             <a :class="pathStr == '/others/'?'bluer':''" @click.prevent="handlerLink('/others/')">其他</a>
+            <a @click.prevent="test1('Vuepress1')">test</a>
           </span>
         </div>
         <div
@@ -36,8 +37,7 @@
         <div class="get-more" v-if="totalSize !== currentLen" @click="handleMore">查看更多</div>
       </div>
       <div class="no-list" v-else>
-        暂未更新!!
-        <a href="star59@163.com">点我发邮件</a>
+        抱歉，暂时还没有更新！
       </div>
     </div>
     <page-right></page-right>
@@ -53,7 +53,10 @@
         pageNo: 1,
         pageSize: 2,
         currentLen: 0,
-        pathStr: ''
+        pathStr: '',
+        tagStatus: '',
+        filterGetSize: 0,
+        filterGetList: []
       }
     },
 
@@ -68,6 +71,11 @@
       },
 
       totalSize () {
+        if (this.tagStatus != '') {
+          const data = this.items.filter(value => this.tagStatus == value.tags);
+          this.filterGetSize = data.length == 0 ? 0 : data.length;
+          return data.length == 0 ? 0 : data.length;
+        }
         return this.items && this.items.length || 0
       },
 
@@ -76,9 +84,15 @@
           if (this.items === null) {
             return []
           }
-          const data = this.formatData(this.items.slice(0,10))
-          this.currentLen = data.length
-          return data
+          let showList = this.items;
+          if (this.tagStatus != '') {
+            const data = this.items.filter(value => this.tagStatus == value.tags);
+            this.filterGetList = data;
+            showList = data.length == 0 ? [] : data;
+          }
+          const cdata = this.formatData(showList.slice(0,10));
+          this.currentLen = cdata.length
+          return cdata
         },
 
         set() {}
@@ -87,7 +101,14 @@
 
     methods: {
 
+      test1(tag) {
+        this.tagStatus = '';
+        this.tagStatus = tag;
+        console.log(this.currentLen)
+      },
+
       handlerLink (link) {
+        this.tagStatus = '';
         this.$router.push(link)
       },
 
@@ -96,7 +117,6 @@
       },
 
       handleMore () {
-
         if (this.currentLen === this.totalSize) {
           return
         }
@@ -105,7 +125,11 @@
         const start = this.currentLen
         const end = this.currentLen + 10
 
-        listData.push(...this.items.slice(start, end))
+        if (this.tagStatus != '') {
+          listData.push(...this.filterGetList.slice(start, end));
+        } else {
+          listData.push(...this.items.slice(start, end));
+        }
 
         this.list = this.formatData(listData)
         this.currentLen = listData.length
