@@ -247,16 +247,16 @@
           .tags{
             float left
             .tag{
-              background-color: rgba(64,158,255,.1)
               border-radius: 4px;
               box-sizing: border-box;
               border: 1px solid rgba(64,158,255,.2);
               float left
               margin-right 6px
-              padding 0 8px
+              padding 3px 8px
               font-size 12px
               color #20a0ff
               &:hover{
+                background-color: rgba(64,158,255,.1)
                 cursor pointer
               }
             }
@@ -349,7 +349,6 @@
       border-bottom 1px solid #f3f3f3
     }
     .tag-success{
-      background-color: rgba(64,158,255,.1);
       display: inline-block;
       padding: 0 10px;
       margin 3px 5px;
@@ -362,21 +361,22 @@
       border: 1px solid rgba(64,158,255,.2);
       white-space: nowrap;
       &:hover{
+        background-color: rgba(64,158,255,.1);
         cursor pointer
       }
     }
     .tag-danger{
-      background-color: rgba(245,108,108,.1);
-      color: #f56c6c;
+      background-color: rgba(64,158,255,.1);
       display: inline-block;
       padding: 0 10px;
       margin 3px 5px;
       height: 32px;
       line-height: 30px;
       font-size: 12px;
+      color: #409eff;
       border-radius: 4px;
       box-sizing: border-box;
-      border: 1px solid rgba(245,108,108,.2);
+      border: 1px solid rgba(64,158,255,.2);
       white-space: nowrap;
       &:hover{
         cursor pointer
