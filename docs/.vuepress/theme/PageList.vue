@@ -2,8 +2,9 @@
   <div class="d-page">
     <div class="d-page-left">
       <div class="item-list-box" v-if="list.length > 0">
-        <div class="item-head">文章分类
-          <span>
+        <div class="item-head">
+          <span class="item-title-class">文章分类</span>
+          <span class="item-title-link">
             <a :class="pathStr == '/essay/'?'bluer':''" @click.prevent="handlerLink('/essay/')">推荐</a>
             <a :class="pathStr == '/front/'?'bluer':''" @click.prevent="handlerLink('/front/')">前端</a>
             <a :class="pathStr == '/java/'?'bluer':''" @click.prevent="handlerLink('/java/')">JAVA后端</a>
@@ -194,11 +195,14 @@
         padding 17px
         font-size 16px
         font-weight bold
-        .bluer{
-          color #007fff
+        .item-title-class{
+          margin 0 auto
         }
-        span {
+        .item-title-link {
           margin-left 250px
+          .bluer{
+            color #007fff
+          }
           a {
             padding 5px
             color #707780

@@ -65,11 +65,6 @@ export default {
   z-index: 1;
 }
 
-@media (max-width: 959px) {
-  .go-to-top {
-    display: none;
-  }
-}
 .fade-enter-active, .fade-leave-active {
   transition: opacity 0.5s;
 }
