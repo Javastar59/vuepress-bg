@@ -2,7 +2,11 @@ module.exports = {
   title: 'star-个人博客',
   description: 'star个人博客,java学习笔记,后端笔记',
   markdown: {
-    lineNumbers: true
+    lineNumbers: true,
+    toc:{
+      includeLevel:[2, 3],
+      containerHeaderHtml: '文章目录'
+    }
   },
   locales: {
     '/': {
