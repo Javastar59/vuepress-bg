@@ -28,4 +28,9 @@ items:
     link: npm
     date: 2019/01/30
     tags: npm
+  - title: 基于VuePress搭建个人网站
+    description: Vue 驱动的静态网站生成器。
+    link: vuepress
+    date: 2019/01/30
+    tags: vuepress
 ---

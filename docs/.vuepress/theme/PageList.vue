@@ -57,7 +57,7 @@
 
       <div class="hot-tags">
         <div class="title">文章标签</div>
-        <span :class=" tagStatus == item ? 'tag-danger' : 'tag-success'" v-for="item in singleTagLists" @click.prevent="handlerTag(item)" >{{item}}</span>
+        <span :class=" tagStatus == key ? 'tag-danger' : 'tag-success'" v-for="(value, key) in hist" @click.prevent="handlerTag(key)" >{{ key }}({{ value }})</span>
       </div>
 
       <hot-article></hot-article>
@@ -80,7 +80,7 @@
         tagStatus: '',
         filterGetSize: 0,
         filterGetList: [],
-        singleTagLists: []
+        hist:{}
       }
     },
 
@@ -92,7 +92,9 @@
       items () {
         this.pathStr = this.$page.path;
         let arr = this.$page.frontmatter.items.map(value => value.tags);
-        this.singleTagLists = [...new Set(arr)];
+        let hist = {};
+        arr.map(a => { if (a in hist) hist[a] ++; else hist[a] = 1; });
+        this.hist = hist;
         return this.$page.frontmatter.items
       },
 
