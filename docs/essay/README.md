@@ -6,6 +6,6 @@ items:
   - title: 基于VuePress搭建个人网站
     description: Vue 驱动的静态网站生成器。
     link: vuepress
-    date: 2019/01/30
+    date: 2019/01/15
     tags: vuepress
 ---
