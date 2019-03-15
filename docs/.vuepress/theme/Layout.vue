@@ -178,7 +178,7 @@ export default {
     setScript() {
       const $script = document.createElement('script')
       document.body.appendChild($script)
-      $script.src = 'https://s19.cnzz.com/z_stat.php?id=1274399628&web_id=1274399628'
+      $script.src = 'https://s96.cnzz.com/z_stat.php?id=1276619732&web_id=1276619732'
     }
   }
 }
