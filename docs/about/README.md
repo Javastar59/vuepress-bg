@@ -12,7 +12,6 @@ practiceList:
     title: 实习
     company: 博智维讯
     content: 主要负责后台运营系统的维护与开发；
-
 skillList:
   - item: 熟悉java语言，spring boot ,spring mvc ,jpa , mybatis；
   - item: 熟练运用jQuery，Vue.js，了解一些源码，用jQuery开发过大量的后台系统网站；
