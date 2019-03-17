@@ -144,7 +144,11 @@
       },
 
       handlerClick (link) {
-        this.$router.push(this.$page.path + link + '.html')
+        if (this.$page.path == '/essay/') {
+          this.$router.push(link + '.html')
+        }else {
+          this.$router.push(this.$page.path + link + '.html')
+        }
       },
 
       handleMore () {

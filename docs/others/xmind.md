@@ -4,6 +4,6 @@ conmment: true
 customerLayoutList: true
 ---
 
-![](https://cdn.star59.top/bg/20190311/iGhV8pqx4Xax.png)
+![](https://cdn.star59.top/bg/20190311/iGhV8pqx4Xax.png-style)
 
-测试效果S
+

@@ -3,7 +3,7 @@ title: 基于VuePress搭建个人网站
 conmment: true
 customerLayoutList: true
 ---
-![vuepress](https://cdn.star59.top/bg/20190311/MsuzAuH4CpIA.png)
+![vuepress](https://cdn.star59.top/bg/20190311/MsuzAuH4CpIA.png-style)
 
 ### vuepress 是什么？
 
