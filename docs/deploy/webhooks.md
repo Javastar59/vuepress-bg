@@ -1,6 +1,5 @@
 ---
 title: 使用Github的webhooks进行自动化部署
-conmment: true
 customerLayoutList: true
 ---
 

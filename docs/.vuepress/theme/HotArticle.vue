@@ -14,13 +14,16 @@
   const hotArticle = [
     {
       title: '基于VuePress搭建个人网站',
-      link: '/essay/vuepress.html'
+      link: '/front/vuepress.html'
     }, {
       title: 'MySQL性能优化',
       link: '/database/mysql1.html'
     }, {
       title: 'Docker学习笔记',
       link: '/deploy/docker1.html'
+    }, {
+      title: 'java数据类型总结笔记',
+      link: '/java/java1.html'
     }
   ];
 

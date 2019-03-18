@@ -1,6 +1,5 @@
 ---
 title: docker-compose安装mysql模板
-conmment: true
 customerLayoutList: true
 ---
 
@@ -8,7 +7,7 @@ customerLayoutList: true
 
 > mysql5的docker-compose.yml 配置如下：
 
-```sh
+```bash
 version: '3.1'
 services:
   mysql:
@@ -38,7 +37,7 @@ volumes:
 
 > mysql8的docker-compose.yml 配置如下：
 
-```sh
+```bash
 version: '3.1'
 services:
   db:

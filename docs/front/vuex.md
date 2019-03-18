@@ -1,6 +1,5 @@
 ---
 title: vuex学习笔记
-conmment: true
 customerLayoutList: true
 ---
 

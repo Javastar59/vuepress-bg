@@ -1,6 +1,5 @@
 ---
 title: vue-router学习笔记
-conmment: true
 customerLayoutList: true
 ---
 

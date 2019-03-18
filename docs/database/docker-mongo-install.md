@@ -1,6 +1,5 @@
 ---
 title: docker-compose安装mongo模板
-conmment: true
 customerLayoutList: true
 ---
 
@@ -8,7 +7,7 @@ customerLayoutList: true
 
 > mongo4的docker-compose.yml 配置如下：
 
-```sh
+```bash
 version: '3.1'
 services:
   mongo:

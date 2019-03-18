@@ -1,6 +1,5 @@
 ---
 title: docker学习笔记（二）
-conmment: true
 customerLayoutList: true
 ---
 
@@ -69,7 +68,7 @@ $ touch Dockerfile
 
 其内容为：
 
-```dockerfile
+```bash
 FROM nginx
 RUN echo '<h1>Hello, Docker!</h1>' > /usr/share/nginx/html/index.html
 ```
@@ -90,7 +89,7 @@ RUN echo '<h1>Hello, Docker!</h1>' > /usr/share/nginx/html/index.html
 
 - *shell* 格式：`RUN <命令>`，就像直接在命令行中输入的命令一样。刚才写的 Dockerfile 中的 `RUN` 指令就是这种格式。
 
-```dockerfile
+```bash
 RUN echo '<h1>Hello, Docker!</h1>' > /usr/share/nginx/html/index.html
 ```
 
@@ -98,7 +97,7 @@ RUN echo '<h1>Hello, Docker!</h1>' > /usr/share/nginx/html/index.html
 
 既然 `RUN` 就像 Shell 脚本一样可以执行命令，那么我们是否就可以像 Shell 脚本一样把每个命令对应一个 RUN 呢？比如这样：
 
-```dockerfile
+```bash
 FROM debian:jessie
 
 RUN apt-get update

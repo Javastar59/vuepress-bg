@@ -1,6 +1,5 @@
 ---
 title: docker-compose安装redis单例与集群模式
-conmment: true
 customerLayoutList: true
 ---
 
@@ -8,7 +7,7 @@ customerLayoutList: true
 
 > redis单例模式，docker-compose.yml 配置如下：
 
-```sh
+```bash
 version: '3.1'
 services:
   reids:
@@ -26,7 +25,7 @@ services:
 
 ### Redis单例配置文件
 
-```sh
+```bash
 bind 0.0.0.0
 protected-mode no
 port 6379
@@ -66,7 +65,7 @@ slave-priority 100
 
 >搭建一主两从环境，docker-compose.yml 配置如下：
 
-```sh
+```bash
 version: '3.1'
 services:
   master:
@@ -94,7 +93,7 @@ services:
 
 >至少需要创建三个 Sentinel 服务，docker-compose.yml 配置如下：
 
-```sh
+```bash
 version: '3.1'
 services:
   sentinel1:
@@ -129,7 +128,7 @@ services:
 
 需要三份 sentinel.conf 配置文件，分别为 `sentinel1.conf`，`sentinel2.conf`，`sentinel3.conf`，配置文件内容相同
 
-```sh
+```bash
 port 26379
 dir /tmp
 # 自定义集群名，其中 127.0.0.1 为 redis-master 的 ip，6379 为 redis-master 的端口，2 为最小投票数（因为有 3 台 Sentinel 所以可以设置成 2）
