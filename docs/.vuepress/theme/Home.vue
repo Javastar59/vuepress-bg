@@ -25,7 +25,7 @@ import NavLink from './NavLink.vue'
 
 export default {
   components: { NavLink },
-
+  // heroImage: https://cdn.star59.top/bg/20190319/rAn4vLHM5MuK.svg
   computed: {
     data () {
       return this.$page.frontmatter
