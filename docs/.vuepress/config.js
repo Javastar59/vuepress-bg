@@ -16,12 +16,12 @@ module.exports = {
     }
   },
   head: [
-    ['link', { rel: 'icon', type: "image/png", href: 'https://cdn.star59.top/favicon.png' }],
+    ['link', { rel: 'icon', type: "image/png", href: 'https://cdn.star59.top/bg/20190319/KjF3HWTMj5WD.png' }],
     ['meta', { name: 'baidu-site-verification', content: 'aDxlDtobeu' }]
   ],
   themeConfig: {
     search: true ,
-    logo: 'https://cdn.star59.top/logo.png',
+    logo: 'https://cdn.star59.top/bg/20190319/B5tjVTWasxqa.png',
     nav: [
       {
         text: '首页',
