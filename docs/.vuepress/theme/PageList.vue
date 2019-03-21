@@ -48,10 +48,10 @@
       <div class="about-me">
         <div class="title">关于作者</div>
         <img class="user-img" src="https://cdn.star59.top/user-img.jpg" @click.prevent="toAbout('/about/')" />
-        <div class="info">姓名：曹兴</div>
-        <div class="info">昵称：star</div>
-        <div class="info">爱好：电影</div>
-        <div class="info">简介：一枚Java开发程序猿</div>
+        <div class="info">姓名： 曹兴</div>
+        <div class="info">昵称： star</div>
+        <div class="info">爱好： 学习</div>
+        <div class="info">简介： 一枚Java开发程序猿</div>
         <a class="more-about" @click.prevent="toAbout('/about/')">更多</a>
       </div>
 
@@ -284,10 +284,13 @@
         height 40px
         line-height 40px
         text-align center
-        color #6a8bad
+        color #666
         background #fff
         margin-top 20px
         cursor pointer
+        &:hover{
+          color #20a0ff
+        }
       }
     }
     .no-list{
