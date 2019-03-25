@@ -3,7 +3,9 @@
     <div class="logo">
       <img
         v-if="data.heroImage"
-        :src="$withBase(data.heroImage)"
+        :src="$withBase(heroImage)"
+        @mouseenter="enter"
+        @mouseleave="leave"
         alt="logo"
       >
 
@@ -25,10 +27,23 @@ import NavLink from './NavLink.vue'
 
 export default {
   components: { NavLink },
-  // heroImage: https://cdn.star59.top/bg/20190319/rAn4vLHM5MuK.svg
+  data () {
+    return {
+      heroImage:''
+    }
+  },
   computed: {
     data () {
+      this.heroImage = this.$page.frontmatter.heroImage;
       return this.$page.frontmatter
+    }
+  },
+  methods:{
+    enter(){
+      this.heroImage = this.$page.frontmatter.heroImage2;
+    },
+    leave(){
+      this.heroImage = this.$page.frontmatter.heroImage;
     }
   }
 }
