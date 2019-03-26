@@ -2,7 +2,7 @@
 home: true
 heroImage: https://cdn.star59.top/bg/20190319/6JvrH9HshhvX.svg
 heroImage2: https://cdn.star59.top/bg/20190319/rAn4vLHM5MuK.svg
-description: 心随往事顺水流，人随风去不敢求
+description: 心之所向、 素履以往、 生如逆旅、 一苇以航
 features:
 - title: 随笔
   links: /essay/
