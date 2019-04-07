@@ -27,7 +27,7 @@ module.exports = {
         text: '首页',
         link: '/'
       }, {
-        text: '随笔',
+        text: '文章',
         link: '/essay/'
       }, {
         text: '在线工具',

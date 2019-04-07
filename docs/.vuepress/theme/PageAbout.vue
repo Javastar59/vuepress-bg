@@ -11,7 +11,7 @@
         <section class="name">曹兴</section>
         <div class="person">
           <section class="info">
-            <div>男 / 1995.05</div>
+            <div>男 / 24</div>
             <div>商洛学院 · 计算机科学与技术专业</div>
             <div>本科 / 2018年毕业</div>
           </section>
@@ -19,6 +19,19 @@
             <div><a href="https://www.star59.top/">https://www.star59.top</a></div>
             <div><a href="#">sunstar59@163.com</a></div>
             <div>15389673176</div>
+          </section>
+        </div>
+      </section>
+      <section class="content-hd">
+        <header class="section-hd">
+          <span class="section-title-l"></span>
+          <div class="section-title">求职意向</div>
+          <span class="section-title-r"></span>
+        </header>
+        <div class="person">
+          <section class="info">
+            <div>求职意向：初级Java开发工程师 <span style="margin-left: 90px">期望行业：互联网/计算机软件</span></div>
+            <div>期望薪资：7K-8K/月 <span style="margin-left: 158px">地点：四川成都</span></div>
           </section>
         </div>
       </section>

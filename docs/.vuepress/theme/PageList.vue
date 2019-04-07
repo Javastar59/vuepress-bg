@@ -8,6 +8,7 @@
             <a :class="pathStr == '/essay/'?'bluer':''" @click.prevent="handlerLink('/essay/')">推荐</a>
             <a :class="pathStr == '/front/'?'bluer':''" @click.prevent="handlerLink('/front/')">前端</a>
             <a :class="pathStr == '/java/'?'bluer':''" @click.prevent="handlerLink('/java/')">JAVA后端</a>
+            <a :class="pathStr == '/dataStructures/'?'bluer':''" @click.prevent="handlerLink('/dataStructures/')">数据结构</a>
             <a :class="pathStr == '/database/'?'bluer':''" @click.prevent="handlerLink('/database/')">数据库</a>
             <a :class="pathStr == '/deploy/'?'bluer':''" @click.prevent="handlerLink('/deploy/')">运维</a>
             <a :class="pathStr == '/others/'?'bluer':''" @click.prevent="handlerLink('/others/')">其他</a>
@@ -49,7 +50,6 @@
         <div class="title">关于作者</div>
         <img class="user-img" src="https://cdn.star59.top/user-img.jpg" @click.prevent="toAbout('/about/')" />
         <div class="info">姓名： 曹兴</div>
-        <div class="info">昵称： star</div>
         <div class="info">爱好： 学习</div>
         <div class="info">简介： 一枚Java开发程序猿</div>
         <a class="more-about" @click.prevent="toAbout('/about/')">更多</a>
@@ -205,7 +205,7 @@
           margin 0 auto
         }
         .item-title-link {
-          margin-left 250px
+          margin-left 180px
           .bluer{
             color #007fff
           }
