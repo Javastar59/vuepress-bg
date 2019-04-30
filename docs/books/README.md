@@ -45,4 +45,4 @@
 * [第6章 交流](Chapter6.md)
 * [第7章 应用](Chapter7.md)
 
-![](/images/cover.jpg)
+![](https://cdn.star59.top/cover.jpg)
